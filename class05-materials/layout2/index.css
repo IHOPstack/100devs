@@ -1,0 +1,23 @@
+* {
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 0px;
+}
+html, body {
+    border: 0px;
+}
+header, footer {
+    height: 100px;
+    clear: both;
+}
+section {
+    height: 200px;
+}
+section + section {
+    height: 300px;
+    float: left;
+    width: 33.3333%;
+}
+section + section + section {
+    width: 66.6666%;
+}

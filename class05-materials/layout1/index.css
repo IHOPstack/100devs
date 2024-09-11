@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    border: 1px, solid, rgb(115, 10, 10);
+    color: brown;
+    margin: 0px;
+}
+html, body {
+    border: 0px;
+}
+.third {
+    width: 33.3333%;
+    height: 200px;
+    float: left;
+}
+.half {
+    width: 50%;
+    height: 300px;
+    float: right;
+    clear: left;
+}
+header, footer {
+    height: 100px;
+    clear: both;
+}
