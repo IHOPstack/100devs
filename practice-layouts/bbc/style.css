@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+header * {
+    width: 10%;
+    float: left;
+}
+header nav {
+    width: 70%;
+}
+header + h2 {
+    float: left;
+    width: 60%;
+}
+h2 + h6 {
+    float: right;
+}
+h6 + section {
+    width: 50%;
+    float: left;
+}
+h6 + section + section {
+    width: 50%;
+    float: left;
+}
+h6 + section + section > div{
+    width: 50%;
+    color: white;
+    border: 1px solid black;
+    float: left;
+}
+h6 + section + section + div {
+    width: 100%;
+    float: left;
+}
+h6 + section + section + div + section > div{
+    width: 33.3333%;
+    float: left;
+}

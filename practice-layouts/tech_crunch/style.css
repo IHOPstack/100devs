@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    width: 10%;
+    height: 1000px;
+    float: left;
+}
+header nav > * {
+    width: 100%;
+    float: left;
+}
+header + section {
+    width: 50%;
+    float: left;
+}
+header + section + section {
+    width: 40%;
+    float: left;
+}
+header + section + section > a {
+    width: 100%;
+    float: left;
+}
+header + section + section + section {
+    width: 90%;
+    float: left;
+}
+header + section + section + section section {
+    width: 30%;
+    float: left;
+}
+header + section + section + section p {
+    width: 30%;
+    float: left;
+}
+header + section + section + section img {
+    width: 30%;
+    float: left;
+}

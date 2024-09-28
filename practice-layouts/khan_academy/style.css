@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    max-width: 800px;
+    margin: auto;
+}
+header {
+    border-bottom: 1px solid black;
+    color: blue;
+    overflow: hidden;
+}
+header > * {
+    float: left;
+    width: 33.3333%;
+}
+header + section {
+    overflow: hidden;
+}
+section > img {
+    float: left;
+    width: 50%;
+}
+section section {
+    width: 50%;
+    float: left;
+    margin: 25px 0;
+}
+h1 {
+    font-size: 2.75em;
+}
+section ul {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+    float: left;
+    background-color: blue;
+    width: fit-content;
+    margin: 0 3px;
+    padding: 5px;
+    border-radius: 10%;
+}
+section ul:first-child {
+    margin: 0, 3px, 0, 0; 
+}
+section ul li a {
+    color: white;
+    text-decoration: none;
+}
+section + section{
+    margin: auto;
+    width: fit-content;
+    clear: both;
+    margin-top: 100px;
+    display: block;
+    
+}
