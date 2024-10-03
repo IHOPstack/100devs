@@ -5,36 +5,184 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
-body {
-
+html {
+  font-size: 62.5%;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+span,
+p {
+  text-align: center;
+  width: 80%;
+  margin: 0 10%;
+}
+
+h2,
+h3 {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
+  background-color: #66778a;
+  overflow: hidden;
+}
 
+nav {
+  overflow: hidden;
+  width: fit-content;
+  display: block;
+}
+
+nav li {
+  list-style: none;
+  float: left;
+  margin: 0 5px;
+}
+
+header img,
+footer img {
+  display: block;
+  margin: 0 auto;
+  width: 15px;
+}
+
+header img+a {
+  float: right;
+  margin-right: 5px;
+  background-color: white;
+  border-radius: 15%;
+  color: #66778a;
+  display: block;
+}
+
+section {
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+header+section {
+  background-color: #66778a;
+  padding-bottom: 5px;
+  color: white;
+}
+
+header+section p {
+  margin: 5px auto;
+}
+
+header+section span {
+  display: block;
+  margin: 0 auto;
+}
+
+.test {
+  margin-top: 15px;
+  color: black;
+  width: fit-content;
+  font-style: italic;
+}
+
+header+section+section+section {
+  background-color: #dbdfe2;
+  padding: 50px;
+}
+
+
+figure {
+  width: 50%;
+  float: left;
+  margin: 0;
+}
+
+figure div {
+  width: 15em;
+  height: 9em;
+  background-color: #66778a;
+  margin: 0 auto;
+  box-shadow: 0px 0px 2px #161f2a;
+}
+
+.content-btn {
+  display: block;
+  width: fit-content;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  margin: 20px auto 0 auto;
+  font-weight: bold;
 }
 
 footer {
+  background-color: #161f2a;
+  color: white;
+  padding: 15px 15px;
+}
 
+footer section {
+  float: left;
+  padding: 0;
+}
+
+footer section span {
+  color: grey;
+  text-align: left;
+  width: fit-content;
+  margin: 0;
+}
+
+footer address {
+  float: right;
+}
+
+footer div+div {
+  margin: 10px 0;
+}
+
+footer a+a {
+  float: right;
+}
+
+hr {
+  clear: both;
+  margin-bottom: 5px;
+}
+
+hr+span {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+hr+span+img {
+  float: right;
 }
 
 /******************************************
