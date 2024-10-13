@@ -5,16 +5,16 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -22,7 +22,13 @@
 /*******************************************/
 
 body {
+  font-family: "Source Sans 3", "sans-serif";
+  background-color: #f5f9fc;
+  color: #2b4559;
+}
 
+img {
+  width: 100%;
 }
 
 
@@ -30,11 +36,88 @@ body {
 /* LAYOUT
 /*******************************************/
 header {
-
+  padding: 10px 10px;
+  overflow: hidden;
 }
 
-footer {
+header>* {
+  float: left;
+}
 
+nav {
+  overflow: hidden;
+  width: 50%;
+  position: relative;
+  left: 25%;
+}
+
+header li {
+  list-style: none;
+  float: left;
+  width: 25%;
+}
+
+header button {
+  float: right;
+}
+
+header+section {
+  width: 100%;
+  overflow: hidden;
+}
+
+header+section section {
+  width: 50%;
+  float: left;
+  padding-left: 40px;
+}
+
+h1 {
+  font-size: 3.75rem;
+}
+
+form {
+  width: 100%;
+  padding: 0;
+}
+
+form input {
+  border: none;
+  width: 80%;
+  background: #e2e9f1;
+  float: left;
+}
+
+form input+input {
+  width: 20%;
+  border: none;
+  background-color: #2b4559;
+  color: white;
+  font-weight: 600;
+  float: left;
+}
+
+header+section div {
+  width: 50%;
+  float: right;
+}
+
+header+section+section {
+  padding: 0 40px;
+}
+
+article {
+  width: 25%;
+  float: left;
+}
+
+header+section+section+section {
+  background-color: white;
+  padding: 25px 40px;
+}
+
+header+section+section+section div {
+  background-color: #e2e9f1;
 }
 
 /******************************************
