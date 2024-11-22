@@ -21,16 +21,144 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-
+:root {
+  --bg-color: white;
+  --text-color: black;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: c9c9c9;
+    color: black;
+  }
+}
+
+html {
+background-color: var(--bg-color);
+ color: var(--text-color);
+ font-size: 62.5%;
+ font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+btn {
+  font-size: 1rem;
+  color: var(--bg-color);
+  background-color: var(--text-color);
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  width: fit-content;
+}
+
+.btn-reverse {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0;
+  width: fit-content;
+}
+
+h6 {
+  font-weight: 400;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
+nav {
+  width: 50%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0; /* Avoid default */
+}
+
+nav a {
+  font-size: 1rem;
+}
+
+.icon {
+  display: inline-block;
+  height: 1rem;
+}
+
+.icon img {
+  height: 100%;
+}
+
+.landing {
+  background-image: url('../assets/hero-image-2.jpeg');
+  background-size: 100%;
+  height: 61.856vw; /* Source photo ratio */
+  padding: 15% 0 0 10%;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: var(--bg-color);
+}
+
+.promo {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  width: 15em;
+  margin: 5% 0;
+  padding: 3rem 1.5rem;
+  z-index: -1;
+}
+
+.promo h6 span {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+/* .promo span {
+  border-left: 1px solid white ;
+} */
+section {
+  width: 100%;
+  padding: 5% 20%;
+  overflow: hidden;
+}
+
+section:nth-of-type(even) {
+  background-color: #F4F4F6;
+}
+
+.services div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+@media (min-width: 780px) {
+  .services div {
+    width: 33.3333%;
+    float: left;
+  }
+}
+
+.about div {
+  background-color: #F4F4F6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 footer {
