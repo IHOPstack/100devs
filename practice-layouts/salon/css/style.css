@@ -40,7 +40,7 @@ background-color: var(--bg-color);
  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-btn {
+.btn, .btn-reverse {
   font-size: 1rem;
   color: var(--bg-color);
   background-color: var(--text-color);
@@ -113,13 +113,18 @@ nav a {
   color: var(--bg-color);
 }
 
-.promo {
+.promo, .promo-clear {
   background-color: var(--text-color);
   color: var(--bg-color);
   width: 15em;
   margin: 5% 0;
   padding: 3rem 1.5rem;
   z-index: -1;
+}
+
+.promo-clear {
+  background-color: inherit;
+  color: var(--text-color);
 }
 
 .promo h6 span {
@@ -159,6 +164,30 @@ section:nth-of-type(even) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.about div+div {
+  background: url('../assets/Home3-Video.jpg');
+  background-size: 100%;
+  height: calc(70.5263vw*.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about img {
+  width: 20%;
+
+}
+
+.test div {
+  flex: display;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.test img {
+  width: 100%;
 }
 
 footer {
