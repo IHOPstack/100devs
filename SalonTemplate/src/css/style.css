@@ -33,6 +33,18 @@ header {
 
 }
 
+main {
+  background: center / 100% no-repeat url('http://placecats.com/1280/720');
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+.flash-sale-banner {
+  background: center / 100% no-repeat url('https://placecats.com/1280/512');
+  overflow: hidden;
+  aspect-ratio: 2.5 / 1;
+}
+
 footer {
 
 }
