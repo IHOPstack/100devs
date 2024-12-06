@@ -1,6 +1,7 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+  border: 1px solid black;
 }
 
 /* Clear fix hack */
@@ -21,26 +22,82 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-
+:root {
+  --bg-primary: white;
+  --bg-secondary: #EFF0F0;
+  --text-color: black;
 }
 
+body {
+  font-size: 62.5%;
+}
+
+nav {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+}
+
+li {
+  width: fit-content;
+  display: inline-block;
+}
+
+li img {
+  height: 1em;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 48px;
+}
 
+header > a {
+  height: 90%;
+}
+
+header > a > img {
+  height: 100%;
+}
+
+#nav-menu-toggle {
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+@media screen and (min-width: 600px) {
+  #nav-menu-toggle {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
 }
 
 main {
-  background: center / 100% no-repeat url('http://placecats.com/1280/720');
   overflow: hidden;
   aspect-ratio: 16 / 9;
 }
 
+section {
+  padding: 10%;
+}
+
+section:nth-child(even) {
+  background-color: var(--bg-secondary);
+}
+
 .flash-sale-banner {
-  background: center / 100% no-repeat url('https://placecats.com/1280/512');
   overflow: hidden;
   aspect-ratio: 2.5 / 1;
 }
@@ -52,3 +109,20 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+main {
+  background: center / 100% no-repeat url('http://placecats.com/1280/720');
+}
+
+section {
+  background-color: var(--bg-primary);
+  padding: 10%;
+}
+
+section:nth-child(even) {
+  background-color: var(--bg-secondary);
+}
+
+.flash-sale-banner {
+  background: center / 100% no-repeat url('https://placecats.com/1280/512');
+}
