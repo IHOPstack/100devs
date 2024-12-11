@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
   border: 1px solid black;
+  text-shadow: 0px 0px 1px white;
 }
 
 /* Clear fix hack */
@@ -47,8 +48,18 @@ li {
   display: inline-block;
 }
 
+img {
+  width: 100%;
+  display: inline-block;
+}
+
 li img {
   height: 1em;
+}
+
+h6 {
+  padding: 0;
+  margin: 0;
 }
 
 /******************************************
@@ -87,6 +98,7 @@ header > a > img {
 main {
   overflow: hidden;
   aspect-ratio: 16 / 9;
+  padding: 15% 0 0 10%;
 }
 
 section {
@@ -96,6 +108,54 @@ section {
 section:nth-child(even) {
   background-color: var(--bg-secondary);
 }
+
+.services div {
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 45%;
+  }
+
+  div {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+}
+
+.news article {
+  display: flex;
+  flex-direction: column;
+  & > * {
+    width: 100%;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.employee{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nametag {
+    width: 80%;
+    height: 4rem;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+
 
 .flash-sale-banner {
   overflow: hidden;
