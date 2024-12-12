@@ -101,6 +101,18 @@ main {
   padding: 15% 0 0 10%;
 }
 
+.sale {
+  width: 50%;
+  height: 10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  & > * {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
 section {
   padding: 10%;
 }
